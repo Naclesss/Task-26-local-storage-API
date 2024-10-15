@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+#first-section {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  height: 470px;
+  border: 1px solid rgb(204, 204, 204);
+  margin-bottom: 10px;
+ 
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.or-part::before,
+.or-part::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.05rem solid rgb(204, 204, 204);
+  border-radius: 10px;
+  width: 4.5rem;
+  margin: 0px 15px;
+  transform: translateY(-0.3rem);
+}
+.log-in-with {
+  display: flex;
+  gap: 6px;
+}
+.sign-up-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(204, 204, 204);
+  width: 330px;
+  height: 8%;
+}
+input {
+  padding: 8px;
+  width: 280px;
+  height: 36px;
+  border: 1px solid rgb(204, 204, 204);
+}
+#sbt-btn {
+  border: none;
+  background-color: #4cb5f9;
+  color: white;
+}
+.sign-up-section span {
+  color: #4cb5f9;
+}
+@media (min-width: 430px) and (max-width: 550px) {
+  input {
+    width: 285px;
+  }
+}
+@media (max-width: 430px) {
+  .sign-up-section,
+  .first-section {
+    border: none;
+  }
+  input {
+    width: 290px;
+    height: 40px;
+  }
+}
+
+a {
+    text-decoration: none;
+    color: #4cb5f9;
+}
+
+#theme-toggle {
+  cursor: pointer;
+  border: none;
+  background-color: #4cb5f9;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+
+
+
+
+body.dark-mode {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+body.dark-mode #first-section {
+  background-color:  #404040;
+  border: 1px solid #444444;
+}
+
+body.dark-mode input {
+  background-color: #333333;
+  color: #e0e0e0;
+  border: 1px solid #444444;
+}
+
+body.dark-mode input::placeholder {
+  color: #bbbbbb;
+}
+
+body.dark-mode #sbt-btn {
+  background-color: #5d9cec;
+}
+
+body.dark-mode a {
+  color: #5d9cec;
+}
+
+body.dark-mode .sign-up-section {
+  background-color: #404040;
+  border: 1px solid #444444;
+}
+
+body.dark-mode .log-in-with i {
+  color: #5d9cec;
+}
+

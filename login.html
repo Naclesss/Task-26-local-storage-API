@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer="defer" src="login.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="section-login">
+      <div id="first-section" style="height: 400px">
+        <i
+          data-visualcompletion="css-img"
+          aria-label="Instagram"
+          class=""
+          role="img"
+          style="
+            background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yv/r/KoLLpWDb4f6.png');
+            background-position: 0px -52px;
+            background-size: auto;
+            width: 175px;
+            height: 51px;
+            background-repeat: no-repeat;
+            display: inline-block;
+          "
+        ></i>
+        <form name="myForm" onsubmit="validateUser(event)">
+          <input
+            name="username"
+            type="text"
+            placeholder="Phone number,username, or email"
+          />
+          <span id="username-error" style="color: red; font-size: 12px"></span>
+          <input name="password" type="password" placeholder="Password" />
+          <span id="password-error" style="color: red; font-size: 12px"></span>
+          <input type="submit" value="Log in" id="sbt-btn" style="cursor: pointer;" />
+          <span id="usercheck-error" style="color: red; font-size: 12px"></span>
+        </form>
+        <span class="or-part" style="font-size: 13px">OR</span>
+        <div class="log-in-with">
+          <i class="fa-brands fa-square-facebook"></i>
+          <p style="cursor: pointer">Log in with Facebook</p>
+        </div>
+        <span style="cursor: pointer">Forgot password?</span>
+      </div>
+      <div class="sign-up-section">
+        <p>Don't have an account? <a href="register.html">Sign up</a></p>
+      </div>
+      <button id="theme-toggle" style="margin-top: 10px;">Dark/Light Mode</button>
+    </section>
+  </body>
+</html>
